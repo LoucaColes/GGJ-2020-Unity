@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LevelFlowManager : Singleton<LevelFlowManager>
 {
+    const float MAX_AUDIENCE_ENGAGEMENT = 100f;
+
     [Header("Flow States")]
     [SerializeField] private LevelFlowState initialFlowState = LevelFlowState.PLAYERSELECT;
 
@@ -131,5 +133,27 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
     public float GetTimeToIntermission()
     {
         return timer;
+    }
+    public void IncreaseAudienceEngagement(float amount)
+    {
+        if (audienceEngagement + amount >= MAX_AUDIENCE_ENGAGEMENT)
+        {
+            audienceEngagement = MAX_AUDIENCE_ENGAGEMENT;
+        }
+        else
+        {
+            audienceEngagement += amount;
+        }
+    }
+    public void DecreaseAudienceEngagement(float amount)
+    {
+        if (audienceEngagement - amount <= 0)
+        {
+            audienceEngagement = 0;
+        }
+        else
+        {
+            audienceEngagement -= amount;
+        }
     }
 }
