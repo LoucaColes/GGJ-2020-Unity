@@ -31,4 +31,9 @@ public class CameraSwitcher : MonoBehaviour
             cameras[index].SetActive(index == currentIndex);
         }
     }
+
+    public void MakeCurrentCameraShake()
+    {
+        cameras[currentIndex].GetComponent<CameraShake>().Shake();
+    }
 }

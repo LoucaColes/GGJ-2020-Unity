@@ -24,6 +24,7 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
     private bool timerActive = false;
 
     public LevelFlowState CurrentFlowState { get { return currentFlowState; } }
+    public CameraSwitcher CameraSwitcher { get { return cameraSwitcher; } }
 
     private void Awake()
     {

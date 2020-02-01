@@ -3,16 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class CameraShake : Singleton<CameraShake>
+public class CameraShake : MonoBehaviour
 {
     [SerializeField] private DOTweenAnimation cameraShake = null;
-
-    private void Awake()
-    {
-        CreateInstance();
-
-        instance = this;
-    }
 
     public void Shake()
     {
