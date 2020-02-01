@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{477e9850-10c2-4269-9638-794a0459267e}">
+		<property name="assetPath">
+			<value>GGJ2020 Audio/Other Wood Hits/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6323ecce-8f28-4f81-a825-354d55a81880}</destination>
+		</relationship>
+	</object>
+</objects>

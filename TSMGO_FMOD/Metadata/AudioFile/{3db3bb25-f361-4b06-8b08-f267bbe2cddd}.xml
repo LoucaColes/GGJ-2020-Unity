@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{3db3bb25-f361-4b06-8b08-f267bbe2cddd}">
+		<property name="assetPath">
+			<value>GGJ2020 Audio/Metal Hits/Metal_Crash_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.97773242630385493</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6323ecce-8f28-4f81-a825-354d55a81880}</destination>
+		</relationship>
+	</object>
+</objects>
