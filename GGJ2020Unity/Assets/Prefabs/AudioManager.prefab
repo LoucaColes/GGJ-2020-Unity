@@ -342,9 +342,9 @@ MonoBehaviour:
   footstepsEE: {fileID: 4973124059023117841}
   curtainsEE: {fileID: 4973124060256677110}
   pullyEE: {fileID: 4973124059972379074}
-  spotlightEE: {fileID: 0}
-  uiClicksEE: {fileID: 0}
-  metalClashEE: {fileID: 0}
+  spotlightEE: {fileID: 4973124059630458091}
+  uiClicksEE: {fileID: 4973124060377068559}
+  metalClashEE: {fileID: 4973124059394244336}
 --- !u!1 &4973124059842516466
 GameObject:
   m_ObjectHideFlags: 0
