@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIP: {fileID: 0}
-  radius: 5
+  radius: 1
 --- !u!1 &5729794202469311333
 GameObject:
   m_ObjectHideFlags: 0
