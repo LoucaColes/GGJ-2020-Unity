@@ -104,6 +104,7 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
         }
         else if (currentFlowState == LevelFlowState.PLAYERSELECT)
         {
+            // if any player input for the 'begin' button is detected, jump to the next stage
 
         }
         else
