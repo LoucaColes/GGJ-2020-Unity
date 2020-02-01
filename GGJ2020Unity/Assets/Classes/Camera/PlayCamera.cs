@@ -25,6 +25,10 @@ public class PlayCamera : MonoBehaviour
     void Update()
     {
         // call player manager and get the player count
+        if (targets[0] == true)
+        {
+            transform.position = targets[0].transform.position + offset;
+        }
         //transform.LookAt(targets[0]);
         //foreach (var t in targets)
         //{

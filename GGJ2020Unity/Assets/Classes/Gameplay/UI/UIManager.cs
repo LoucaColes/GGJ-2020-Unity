@@ -24,6 +24,20 @@ public class UIManager : MonoBehaviour
         //        playerJoinUI.SetActive(true);
         //    }
         //}
+        if (LevelFlowManager.instance.CurrentFlowState != LevelFlowState.PLAYERSELECT)
+        {
+            if (playerJoinUI.activeInHierarchy == true)
+            {
+                playerJoinUI.SetActive(false);
+            }
+        }
+        else
+        {
+            if (playerJoinUI.activeInHierarchy == false)
+            {
+                playerJoinUI.SetActive(true);
+            }
+        }
     }
 
     private void SetUIState(GameObject targetUI, LevelFlowState levelFlowState, bool setState)
