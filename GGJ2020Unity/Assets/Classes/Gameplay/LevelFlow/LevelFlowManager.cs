@@ -102,6 +102,10 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
 
             timerActive = true;
         }
+        else if (currentFlowState == LevelFlowState.PLAYERSELECT)
+        {
+
+        }
         else
         {
             SetNextState();

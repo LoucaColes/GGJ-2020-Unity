@@ -15,7 +15,14 @@ public class PlayerInput : MonoBehaviour
         player = ReInput.players.GetPlayer(playerID);
     }
 
-    
+    private void Update()
+    {
+        if (Interact)
+        {
+            Debug.Log("Interacting");
+        }
+    }
+
     public float Horizontal { get { return player.GetAxis("Horizontal"); } }
     public float Vertical { get { return player.GetAxis("Vertical"); } }
 
