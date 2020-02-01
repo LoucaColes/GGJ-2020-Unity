@@ -4,5 +4,6 @@ using UnityEngine;
 
 public interface IInteractable
 {
+    void Break();
     void Interact();
 }
