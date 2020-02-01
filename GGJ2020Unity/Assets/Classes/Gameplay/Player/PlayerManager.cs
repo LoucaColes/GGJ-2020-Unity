@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : Singleton<PlayerManager>
 {
     [SerializeField] private PlayerInput[] playersIP = new PlayerInput[0];
 
@@ -11,6 +11,13 @@ public class PlayerManager : MonoBehaviour
     private int playerCount = 0;
 
     public int PlayerCount { get { return playerCount; } }
+
+    private void Awake()
+    {
+        CreateInstance();
+
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -63,5 +70,21 @@ public class PlayerManager : MonoBehaviour
                 }
             }
         }
+    }
+    public int GetPlayerCount()
+    {
+        return playerCount;
+    }
+    public List<Transform> GetPlayerTransforms()
+    {
+        List<Transform> pTransforms = new List<Transform>();
+        foreach (var p in playersOB)
+        {
+            if (p.activeInHierarchy == true)
+            {
+                pTransforms.Add(p.transform);
+            }
+        }
+        return pTransforms;
     }
 }

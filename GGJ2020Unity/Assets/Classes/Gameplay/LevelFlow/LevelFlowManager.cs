@@ -26,6 +26,8 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
     public LevelFlowState CurrentFlowState { get { return currentFlowState; } }
     public CameraSwitcher CameraSwitcher { get { return cameraSwitcher; } }
 
+    public float audienceEngagement = 100f;
+
     private void Awake()
     {
         CreateInstance();
