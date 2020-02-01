@@ -25,16 +25,16 @@ public class PlayCamera : MonoBehaviour
     void Update()
     {
         // call player manager and get the player count
-        //transform.LookAt(playerTarget);
-        foreach (var t in targets)
-        {
-            if (t.gameObject.activeInHierarchy == true)
-            {
-            }
-         //   centre += t.transform.position;
-        }
-        Vector3 newPos = centre / count;
-        transform.position = newPos + offset;
+        //transform.LookAt(targets[0]);
+        //foreach (var t in targets)
+        //{
+        //    if (t.gameObject.activeInHierarchy == true)
+        //    {
+        //    }
+        // //   centre += t.transform.position;
+        //}
+        //Vector3 newPos = centre / count;
+        //transform.position = newPos + offset;
         //transform.position = playerTarget[0].transform.position + offset;
     }
 

@@ -128,4 +128,8 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
 
         nextFlowState = (LevelFlowState)currentState;
     }
+    public float GetTimeToIntermission()
+    {
+        return timer;
+    }
 }
