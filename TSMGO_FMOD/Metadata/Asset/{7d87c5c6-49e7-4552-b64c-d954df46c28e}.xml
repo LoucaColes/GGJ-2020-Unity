@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{7d87c5c6-49e7-4552-b64c-d954df46c28e}">
+		<property name="assetPath">
+			<value>GGJ2020 Audio/Robot Voices/Boos/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6323ecce-8f28-4f81-a825-354d55a81880}</destination>
+		</relationship>
+	</object>
+</objects>

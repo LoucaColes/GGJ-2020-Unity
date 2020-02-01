@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{cd4e0b28-5494-4f16-8b86-9dca6ebb5e97}">
+		<property name="assetPath">
+			<value>GGJ2020 Audio/FOLEY&amp;COMPS/VOICES/Will_NOISE2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.91945578231292513</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6323ecce-8f28-4f81-a825-354d55a81880}</destination>
+		</relationship>
+	</object>
+</objects>
