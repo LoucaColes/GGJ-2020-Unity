@@ -40,8 +40,9 @@ public class AudioSystem : Singleton<AudioSystem>
 
     [SerializeField] private StudioEventEmitter uiClicksEE;
 
-    [SerializeField] private StudioEventEmitter metalClashEE
-        ;
+    [SerializeField] private StudioEventEmitter metalClashEE;
+
+    [SerializeField] private StudioEventEmitter audienceEE;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,8 @@ public class AudioSystem : Singleton<AudioSystem>
         CreateInstance();
 
         instance = this;
+
+        //audienceEE.Play();
     }
 
     // Update is called once per frame
@@ -198,5 +201,10 @@ public class AudioSystem : Singleton<AudioSystem>
     {
         metalClashEE.transform.position = _location;
         metalClashEE.Play();
+    }
+
+    public void UpdateAudienceSetting(int setting)
+    {
+        audienceEE.SetParameter("Audience_Reaction", (float)setting);
     }
 }
