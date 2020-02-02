@@ -73,6 +73,9 @@ public class InteractableManager : Singleton<InteractableManager>
         Debug.Log("Breaking Cardboard");
         int index = Random.Range(0, cardboardProps.Length);
 
-        cardboardProps[index].Break();
+        if (cardboardProps[index].InteractableState == InteractableState.WORKING)
+        {
+            cardboardProps[index].Break();
+        }
     }
 }

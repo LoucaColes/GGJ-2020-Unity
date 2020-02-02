@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class CardboardProp : MonoBehaviour, IInteractable
 {
+    [SerializeField] private ParticleSystem dustPS;
     [SerializeField] private Vector3 collapseRotation = new Vector3();
     [SerializeField] private Vector3 fixedRotation = new Vector3();
 
     [SerializeField] private float rotateSpeed = 1;
+    [SerializeField] private float dustDelay = 0.25f;
 
     private InteractableState interactableState = InteractableState.WORKING;
+    private bool triggered = false;
+
+    public InteractableState InteractableState { get { return interactableState; } }
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +32,14 @@ public class CardboardProp : MonoBehaviour, IInteractable
             if (distance > Mathf.Epsilon)
             {
                 transform.localRotation = Quaternion.RotateTowards(transform.localRotation, Quaternion.Euler(collapseRotation), rotateSpeed * Time.deltaTime);
+            }
+            else
+            {
+                if (!triggered)
+                {
+                    
+                    triggered = true;
+                }
             }
 
         }
@@ -48,6 +61,15 @@ public class CardboardProp : MonoBehaviour, IInteractable
     public void Break()
     {
         interactableState = InteractableState.BROKE;
+        triggered = false;
+        StartCoroutine(PlayDustPS());
+    }
+
+    private IEnumerator PlayDustPS()
+    {
+        yield return new WaitForSeconds(dustDelay);
+        dustPS.gameObject.SetActive(true);
+        dustPS.Play();
     }
 
     public void Interact()
