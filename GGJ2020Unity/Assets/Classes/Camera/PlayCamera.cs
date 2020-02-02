@@ -15,31 +15,67 @@ public class PlayCamera : MonoBehaviour
 
     Vector3 centre = new Vector3(0, 0, 0);
     int count = 0;
-
+    private Vector3 velocity;
+    public float smoothTime = 1f;
+    Camera cam;
+    public float minZoom = 40f;
+    public float maxZoom = 80f;
+    public float zoomLimiter = 50f;
     private void Awake()
     {
         offset = transform.position;
+        cam = GetComponent<Camera>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-        // call player manager and get the player count
-        if (targets[0] == true)
+        //if (targets.Count == 0)
+        //    return;
+        MoveCamera();
+        //ZoomCamera();
+    }
+    private void ZoomCamera()
+    {
+        float newZoom = Mathf.Lerp(maxZoom, minZoom, GetGreatestDistance() / zoomLimiter);
+        cam.fieldOfView = newZoom;
+    }
+    private void MoveCamera()
+    {
+        Vector3 centrePoint = GetCentrePoint();
+        Vector3 newPos = centrePoint + offset;
+
+        transform.position = Vector3.SmoothDamp(transform.position, newPos, ref velocity, smoothTime);
+    }
+    float GetGreatestDistance()
+    {
+        var bounds = new Bounds(targets[0].position, Vector3.zero);
+        for (int i = 0; i < targets.Count; i++)
         {
-            transform.position = targets[0].transform.position + offset;
+            if (targets[i].gameObject.activeInHierarchy)
+            {
+                bounds.Encapsulate(targets[i].position);
+            }
         }
-        //transform.LookAt(targets[0]);
-        //foreach (var t in targets)
+        return bounds.size.z;
+    }
+    Vector3 GetCentrePoint()
+    {
+        //if (targets.Count == 1)
         //{
-        //    if (t.gameObject.activeInHierarchy == true)
-        //    {
-        //    }
-        // //   centre += t.transform.position;
+        //    return targets[0].position;
         //}
-        //Vector3 newPos = centre / count;
-        //transform.position = newPos + offset;
-        //transform.position = playerTarget[0].transform.position + offset;
+
+        var bounds = new Bounds(targets[0].position, Vector3.zero);
+        for (int i = 0; i < targets.Count; i++)
+        {
+            if (targets[i].gameObject.activeInHierarchy)
+            {
+                bounds.Encapsulate(targets[i].position);
+            }
+            //bounds.Encapsulate(targets[i].position);
+
+        }
+        return bounds.center;
     }
 
     public void AddTarget(Transform newTarget)
