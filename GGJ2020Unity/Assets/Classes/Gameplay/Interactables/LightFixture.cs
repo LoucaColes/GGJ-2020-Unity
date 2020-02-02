@@ -37,4 +37,9 @@ public class LightFixture : MonoBehaviour, IInteractable
         interactableState = InteractableState.FIXING;
         rb.AddForce(new Vector3(0, 20000, 20));
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        AudioSystem.instance.PlayMetalClashOneShot(transform.position);
+    }
 }

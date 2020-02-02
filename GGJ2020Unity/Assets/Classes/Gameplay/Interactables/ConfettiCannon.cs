@@ -7,6 +7,7 @@ public class ConfettiCannon : MonoBehaviour, IInteractable
     [SerializeField] private ParticleSystem confetti;
 
     [SerializeField, Range(0, 20)] private float cooldown = 5;
+    [SerializeField] private float reactionRate = 10f;
 
     private bool canInteract = true;
     private float timer = 0;
@@ -43,7 +44,7 @@ public class ConfettiCannon : MonoBehaviour, IInteractable
             timer = cooldown;
             canInteract = false;
             AudioSystem.instance.PlayConfettiOneShot(transform.position);
+            LevelFlowManager.instance.IncreaseAudienceEngagement(reactionRate);
         }
-        Debug.Log("Increase Audience Reaction");
     }
 }

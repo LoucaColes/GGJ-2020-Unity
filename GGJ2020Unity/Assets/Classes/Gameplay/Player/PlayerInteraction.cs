@@ -28,6 +28,7 @@ public class PlayerInteraction : MonoBehaviour
                 if (interactable != null)
                 {
                     interactable.Interact();
+                    AudioSystem.instance.PlayRepairFastOneShot(transform.position);
                     break;
                 }
             }

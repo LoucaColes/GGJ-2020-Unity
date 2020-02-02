@@ -10,6 +10,7 @@ public class CardboardProp : MonoBehaviour, IInteractable
 
     [SerializeField] private float rotateSpeed = 1;
     [SerializeField] private float dustDelay = 0.25f;
+    [SerializeField] private float reactionRate = 0.25f;
 
     private InteractableState interactableState = InteractableState.WORKING;
     private bool triggered = false;
@@ -27,6 +28,7 @@ public class CardboardProp : MonoBehaviour, IInteractable
     {
         if (interactableState == InteractableState.BROKE)
         {
+            LevelFlowManager.instance.DecreaseAudienceEngagement(reactionRate);
             float distance = Vector3.Distance(transform.localRotation.eulerAngles, collapseRotation);
 
             if (distance > Mathf.Epsilon)
@@ -70,6 +72,7 @@ public class CardboardProp : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(dustDelay);
         dustPS.gameObject.SetActive(true);
         dustPS.Play();
+        AudioSystem.instance.PlayWoodSmashHeavyOneShot(transform.position);
     }
 
     public void Interact()
