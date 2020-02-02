@@ -79,6 +79,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8529869606559719047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5296693848747817976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 846a3ede31968c64498a4a7c8044eb7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableMats:
+  - {fileID: 2100000, guid: 07829a510e7a8e7429c246dfd5978fbd, type: 2}
+  - {fileID: 2100000, guid: c3384ec805d5312478126ef1b09159a6, type: 2}
+  - {fileID: 2100000, guid: 116bc4d5a5b029e4696c37e6bec8bc80, type: 2}
+  - {fileID: 2100000, guid: ac3b90cfec7f95c40a776018fd80f023, type: 2}
+  availableDarkMats:
+  - {fileID: 2100000, guid: f2d547c14a182d444a445de4c16ac71e, type: 2}
+  - {fileID: 2100000, guid: 0d3ec0387ed6af84fb31f3c0d0a885ba, type: 2}
+  - {fileID: 2100000, guid: cd9f453e07c40c943acdc443895b075e, type: 2}
+  - {fileID: 2100000, guid: 6ba0447d1ed7753469b54382732763cc, type: 2}
+  mats: []
 --- !u!1001 &7300795323576204286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -226,6 +249,12 @@ PrefabInstance:
 --- !u!4 &8518677475385992736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1398876405778308574, guid: 74593f9cd6fc76941a69a02e04be721f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7300795323576204286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5296693848747817976 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3229081295028715526, guid: 74593f9cd6fc76941a69a02e04be721f,
     type: 3}
   m_PrefabInstance: {fileID: 7300795323576204286}
   m_PrefabAsset: {fileID: 0}

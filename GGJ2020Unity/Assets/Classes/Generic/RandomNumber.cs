@@ -7,14 +7,15 @@ public class RandomNumber : Singleton<RandomNumber>
     private System.Random random = new System.Random();
 
     // Start is called before the first frame update
-    void Start()
+    public void Awake()
     {
         CreateInstance();
         instance = this;
+
     }
 
     public int GetRandomValue()
     {
-        return random.Next(0, 4);
+        return random.Next(0,4);
     }
 }
