@@ -235,60 +235,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &511515141
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 511515142}
-  - component: {fileID: 511515143}
-  m_Layer: 0
-  m_Name: AudienceEE
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &511515142
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511515141}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4973124060294571154}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &511515143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511515141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Audience
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &555922932 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5822279843989363031, guid: 52b44db1094cdb342b2f755e31cdef88,
@@ -393,6 +339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardboardWallGap (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7529192398899082261, guid: db528c6350cc465439a43f081b55a74f,
+        type: 3}
+      propertyPath: rotateSpeed
+      value: 360
+      objectReference: {fileID: 0}
     - target: {fileID: 7529192398899082260, guid: db528c6350cc465439a43f081b55a74f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -447,11 +398,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529192398899082261, guid: db528c6350cc465439a43f081b55a74f,
-        type: 3}
-      propertyPath: rotateSpeed
-      value: 360
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db528c6350cc465439a43f081b55a74f, type: 3}
@@ -582,6 +528,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardboardWallGap
       objectReference: {fileID: 0}
+    - target: {fileID: 7529192398899082261, guid: db528c6350cc465439a43f081b55a74f,
+        type: 3}
+      propertyPath: rotateSpeed
+      value: 360
+      objectReference: {fileID: 0}
     - target: {fileID: 7529192398899082260, guid: db528c6350cc465439a43f081b55a74f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -636,11 +587,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529192398899082261, guid: db528c6350cc465439a43f081b55a74f,
-        type: 3}
-      propertyPath: rotateSpeed
-      value: 360
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db528c6350cc465439a43f081b55a74f, type: 3}
@@ -719,6 +665,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardboardTree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6713520099443659600, guid: ed1c8ed2450096d43860f8b8ed8e6d8a,
+        type: 3}
+      propertyPath: rotateSpeed
+      value: 360
+      objectReference: {fileID: 0}
     - target: {fileID: 6713520099443659615, guid: ed1c8ed2450096d43860f8b8ed8e6d8a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -773,11 +724,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6713520099443659600, guid: ed1c8ed2450096d43860f8b8ed8e6d8a,
-        type: 3}
-      propertyPath: rotateSpeed
-      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: 1029156178990164911, guid: ed1c8ed2450096d43860f8b8ed8e6d8a,
         type: 3}
@@ -1057,12 +1003,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4aef053fd73d3b40b7d22ec79d818a3, type: 3}
---- !u!4 &4973124060294571154 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4973124059829606717, guid: d4aef053fd73d3b40b7d22ec79d818a3,
-    type: 3}
-  m_PrefabInstance: {fileID: 4973124060294571153}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5643076900561350681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1367,6 +1307,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardboardTree
       objectReference: {fileID: 0}
+    - target: {fileID: 6713520099443659600, guid: ed1c8ed2450096d43860f8b8ed8e6d8a,
+        type: 3}
+      propertyPath: rotateSpeed
+      value: 360
+      objectReference: {fileID: 0}
     - target: {fileID: 6713520099443659615, guid: ed1c8ed2450096d43860f8b8ed8e6d8a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1421,11 +1366,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6713520099443659600, guid: ed1c8ed2450096d43860f8b8ed8e6d8a,
-        type: 3}
-      propertyPath: rotateSpeed
-      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: 1029156178990164911, guid: ed1c8ed2450096d43860f8b8ed8e6d8a,
         type: 3}

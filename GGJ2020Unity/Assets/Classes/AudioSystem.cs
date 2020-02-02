@@ -44,6 +44,9 @@ public class AudioSystem : Singleton<AudioSystem>
 
     [SerializeField] private StudioEventEmitter audienceEE;
 
+    [SerializeField, Range(0, 100)] private float testAudienceValue = 50;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +54,7 @@ public class AudioSystem : Singleton<AudioSystem>
 
         instance = this;
 
-        //audienceEE.Play();
+        audienceEE.Play();
     }
 
     // Update is called once per frame
@@ -68,6 +71,16 @@ public class AudioSystem : Singleton<AudioSystem>
         if (Input.GetKeyDown(KeyCode.Alpha9))
         {
             PlayGlassSmashLightOneShot(Vector3.zero);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            UpdateAudienceSetting(20f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            UpdateAudienceSetting(80f);
         }
     }
 
@@ -203,8 +216,8 @@ public class AudioSystem : Singleton<AudioSystem>
         metalClashEE.Play();
     }
 
-    public void UpdateAudienceSetting(int setting)
+    public void UpdateAudienceSetting(float setting)
     {
-        audienceEE.SetParameter("Audience_Reaction", (float)setting);
+        audienceEE.SetParameter("Audiance_Reaction", setting);
     }
 }
