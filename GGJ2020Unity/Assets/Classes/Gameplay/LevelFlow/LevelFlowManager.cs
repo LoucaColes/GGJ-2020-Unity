@@ -32,6 +32,10 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
 
     public float audienceEngagement = 50f;
 
+    private bool triggered = false;
+
+    private int id = 0;
+
     private void Awake()
     {
         CreateInstance();
@@ -52,6 +56,29 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
         {
             timer -= Time.deltaTime;
 
+            if (currentFlowState == LevelFlowState.PLAY)
+            {
+                int intTimer = Mathf.RoundToInt(timer);
+
+                if (intTimer % 15 == 0)
+                {
+                    if (!triggered)
+                    {
+                        id++;
+                        if (id > 4)
+                        {
+                            id = 2;
+                        }
+                        AudioSystem.instance.UpdateMusicSetting(id);
+                        triggered = true;
+                    }
+                }
+                else
+                {
+                    triggered = false;
+                }
+            }
+
             if (timer < 0)
             {
                 timerActive = false;
@@ -67,12 +94,15 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
         switch (currentFlowState)
         {
             case LevelFlowState.PLAYERSELECT:
+                AudioSystem.instance.UpdateMusicSetting(1);
                 StartTimer(playerSelectTime);
                 break;
             case LevelFlowState.SETUP:
                 StartTimer(setUpTime);
                 break;
             case LevelFlowState.PLAY:
+                AudioSystem.instance.UpdateMusicSetting(2);
+                id = 2;
                 StartTimer(playTime);
                 break;
             case LevelFlowState.AUDIENCEREACTION:
@@ -83,6 +113,7 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
                 StartTimer(audienceReactionTime);
                 break;
             case LevelFlowState.CREDITS:
+                AudioSystem.instance.UpdateMusicSetting(1);
                 if (cameraSwitcher)
                 {
                     cameraSwitcher.SwitchCameras();
