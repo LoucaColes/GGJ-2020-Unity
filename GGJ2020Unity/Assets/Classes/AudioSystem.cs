@@ -68,7 +68,7 @@ public class AudioSystem : Singleton<AudioSystem>
     // Update is called once per frame
     void Update()
     {
-
+        UpdateAudienceSetting(LevelFlowManager.instance.audienceEngagement);
     }
 
     #region Glass

@@ -20,6 +20,8 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
     [Header("Camera Stuff")]
     [SerializeField] private CameraSwitcher cameraSwitcher = null;
 
+    [SerializeField] private NewsPaper newsPaper;
+
     private LevelFlowState currentFlowState = LevelFlowState.PLAYERSELECT;
     private LevelFlowState nextFlowState = LevelFlowState.PLAYERSELECT;
     private float timer = 0;
@@ -28,7 +30,7 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
     public LevelFlowState CurrentFlowState { get { return currentFlowState; } }
     public CameraSwitcher CameraSwitcher { get { return cameraSwitcher; } }
 
-    public float audienceEngagement = 100f;
+    public float audienceEngagement = 50f;
 
     private void Awake()
     {
@@ -106,10 +108,17 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
 
             timerActive = true;
         }
-        else if (currentFlowState == LevelFlowState.PLAYERSELECT)
+        else if (currentFlowState == LevelFlowState.PLAYERSELECT )
         {
             // if any player input for the 'begin' button is detected, jump to the next stage
 
+        }
+        else if (currentFlowState == LevelFlowState.REVIEW)
+        {
+            if (newsPaper)
+            {
+                newsPaper.gameObject.SetActive(true);
+            }
         }
         else
         {
