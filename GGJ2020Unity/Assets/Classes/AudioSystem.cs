@@ -42,9 +42,16 @@ public class AudioSystem : Singleton<AudioSystem>
 
     [SerializeField] private StudioEventEmitter metalClashEE;
 
+    [SerializeField] private StudioEventEmitter confettiEE;
+
+    [Header("Dynamic")]
     [SerializeField] private StudioEventEmitter audienceEE;
 
     [SerializeField, Range(0, 100)] private float testAudienceValue = 50;
+
+    [SerializeField] private StudioEventEmitter musicEE;
+
+    [SerializeField, Range(0, 4)] private int testMusicValue = 0;
 
 
     // Start is called before the first frame update
@@ -55,33 +62,13 @@ public class AudioSystem : Singleton<AudioSystem>
         instance = this;
 
         audienceEE.Play();
+        musicEE.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            PlayGlassSmashOneShot(Vector3.zero);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            PlayGlassSmashLightOneShot(Vector3.zero);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha9))
-        {
-            PlayGlassSmashLightOneShot(Vector3.zero);
-        }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            UpdateAudienceSetting(20f);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            UpdateAudienceSetting(80f);
-        }
     }
 
     #region Glass
@@ -216,8 +203,22 @@ public class AudioSystem : Singleton<AudioSystem>
         metalClashEE.Play();
     }
 
+    public void PlayConfettiOneShot(Vector3 _location)
+    {
+        confettiEE.transform.position = _location;
+        confettiEE.Play();
+    }
+
     public void UpdateAudienceSetting(float setting)
     {
+        Debug.Log("Updating audience setting");
         audienceEE.SetParameter("Audiance_Reaction", setting);
+        audienceEE.Play();
+    }
+
+    public void UpdateMusicSetting(int setting)
+    {
+        musicEE.SetParameter("Parameter1", setting);
+        musicEE.Play();
     }
 }
