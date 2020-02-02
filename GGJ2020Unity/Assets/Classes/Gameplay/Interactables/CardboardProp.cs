@@ -28,7 +28,10 @@ public class CardboardProp : MonoBehaviour, IInteractable
     {
         if (interactableState == InteractableState.BROKE)
         {
-            LevelFlowManager.instance.DecreaseAudienceEngagement(reactionRate);
+            if (LevelFlowManager.instance.CurrentFlowState == LevelFlowState.PLAY)
+            {
+                LevelFlowManager.instance.DecreaseAudienceEngagement(reactionRate);
+            }
             float distance = Vector3.Distance(transform.localRotation.eulerAngles, collapseRotation);
 
             if (distance > Mathf.Epsilon)

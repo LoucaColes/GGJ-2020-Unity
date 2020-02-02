@@ -101,6 +101,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 0d3ec0387ed6af84fb31f3c0d0a885ba, type: 2}
   - {fileID: 2100000, guid: cd9f453e07c40c943acdc443895b075e, type: 2}
   - {fileID: 2100000, guid: 6ba0447d1ed7753469b54382732763cc, type: 2}
+  faceMaterials:
+  - {fileID: 2100000, guid: fb18213cc1f569e44813db2a45611915, type: 2}
+  - {fileID: 2100000, guid: db506387e436d4549ab06faf737b2380, type: 2}
+  - {fileID: 2100000, guid: 6f1d121a5f402234b85c1bf2c6a7b962, type: 2}
+  - {fileID: 2100000, guid: bb1777a240a93e04392252bf92a069fe, type: 2}
 --- !u!1001 &7300795323576204286
 PrefabInstance:
   m_ObjectHideFlags: 0
