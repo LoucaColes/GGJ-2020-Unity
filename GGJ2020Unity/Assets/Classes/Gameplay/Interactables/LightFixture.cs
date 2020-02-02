@@ -7,12 +7,12 @@ public class LightFixture : MonoBehaviour, IInteractable
 {
     private Rigidbody rb;
     private InteractableState interactableState = InteractableState.WORKING;
-
+    public InteractableState InteractableState { get => interactableState; set => interactableState = value; }
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
-        Break();
+        //Break();
     }
     // Start is called before the first frame update
     void Start()

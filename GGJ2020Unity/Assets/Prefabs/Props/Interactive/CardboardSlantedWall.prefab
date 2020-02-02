@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4694396686992210381}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.0000034319203, y: 0, z: -0.0000030408353}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1.2, y: 3.6, z: 3.6}
   m_Children:
   - {fileID: 7632222110633908602}
   - {fileID: 7254044128777886158}
@@ -51,6 +51,7 @@ MonoBehaviour:
   fixedRotation: {x: 0, y: -90, z: 0}
   rotateSpeed: 360
   dustDelay: 0.25
+  reactionRate: 0.25
 --- !u!64 &4694396686992210380
 MeshCollider:
   m_ObjectHideFlags: 0

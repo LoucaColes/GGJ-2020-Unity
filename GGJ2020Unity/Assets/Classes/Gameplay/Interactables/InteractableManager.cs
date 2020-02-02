@@ -6,6 +6,8 @@ public class InteractableManager : Singleton<InteractableManager>
 {
     [SerializeField] private CardboardProp[] cardboardProps;
 
+    [SerializeField] private LightFixture[] lightFixtures;
+
     [SerializeField] private float playTime = 60f;
     [SerializeField, Range(1, 15)] private int disasterRate = 5;
 
@@ -57,7 +59,10 @@ public class InteractableManager : Singleton<InteractableManager>
                 BreakCardboardProps();
                 triggered = true;
                 break;
-                //case 1:
+                case 1:
+                BreakLightFixture();
+                triggered = true;
+                break;
                 //case 2:
                 //case 3:
                 //case 4:
@@ -76,6 +81,16 @@ public class InteractableManager : Singleton<InteractableManager>
         if (cardboardProps[index].InteractableState == InteractableState.WORKING)
         {
             cardboardProps[index].Break();
+        }
+    }
+    private void BreakLightFixture()
+    {
+        Debug.Log("Breaking light");
+        int index = Random.Range(0, lightFixtures.Length);
+
+        if (lightFixtures[index].InteractableState == InteractableState.WORKING)
+        {
+            lightFixtures[index].Break();
         }
     }
 }
