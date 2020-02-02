@@ -22,6 +22,8 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
 
     [SerializeField] private NewsPaper newsPaper;
 
+    [SerializeField] private GameObject[] actors;
+
     private LevelFlowState currentFlowState = LevelFlowState.PLAYERSELECT;
     private LevelFlowState nextFlowState = LevelFlowState.PLAYERSELECT;
     private float timer = 0;
@@ -96,12 +98,23 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
             case LevelFlowState.PLAYERSELECT:
                 AudioSystem.instance.UpdateMusicSetting(1);
                 StartTimer(playerSelectTime);
+                for (int i = 0; i < actors.Length; i++)
+                {
+                    actors[i].SetActive(false);
+                }
                 break;
             case LevelFlowState.SETUP:
                 StartTimer(setUpTime);
                 break;
             case LevelFlowState.PLAY:
                 AudioSystem.instance.UpdateMusicSetting(2);
+                for (int i = 0; i < actors.Length; i++)
+                {
+                    if (actors[i].activeInHierarchy == false)
+                    {
+                        actors[i].SetActive(true);
+                    }
+                }
                 id = 2;
                 StartTimer(playTime);
                 break;
