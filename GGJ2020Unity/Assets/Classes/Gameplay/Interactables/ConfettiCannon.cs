@@ -42,6 +42,7 @@ public class ConfettiCannon : MonoBehaviour, IInteractable
             confetti.Play();
             timer = cooldown;
             canInteract = false;
+            AudioSystem.instance.PlayConfettiOneShot(transform.position);
         }
         Debug.Log("Increase Audience Reaction");
     }
