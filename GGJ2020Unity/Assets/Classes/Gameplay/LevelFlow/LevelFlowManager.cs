@@ -119,6 +119,14 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
                 StartTimer(playTime);
                 break;
             case LevelFlowState.AUDIENCEREACTION:
+                if (audienceEngagement >= 50)
+                {
+                    AudioSystem.instance.UpdateMusicSetting(3);
+                }
+                else
+                {
+                    AudioSystem.instance.UpdateMusicSetting(2);
+                }
                 if (cameraSwitcher)
                 {
                     cameraSwitcher.SwitchCameras();
@@ -126,7 +134,7 @@ public class LevelFlowManager : Singleton<LevelFlowManager>
                 StartTimer(audienceReactionTime);
                 break;
             case LevelFlowState.CREDITS:
-                AudioSystem.instance.UpdateMusicSetting(1);
+                
                 if (cameraSwitcher)
                 {
                     cameraSwitcher.SwitchCameras();

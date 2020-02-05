@@ -31,6 +31,7 @@ public class CardboardProp : MonoBehaviour, IInteractable
             if (LevelFlowManager.instance.CurrentFlowState == LevelFlowState.PLAY)
             {
                 LevelFlowManager.instance.DecreaseAudienceEngagement(reactionRate);
+                AudioSystem.instance.UpdateAudienceSetting(LevelFlowManager.instance.audienceEngagement);
             }
             float distance = Vector3.Distance(transform.localRotation.eulerAngles, collapseRotation);
 
@@ -70,12 +71,14 @@ public class CardboardProp : MonoBehaviour, IInteractable
         StartCoroutine(PlayDustPS());
     }
 
+
     private IEnumerator PlayDustPS()
     {
         yield return new WaitForSeconds(dustDelay);
         dustPS.gameObject.SetActive(true);
         dustPS.Play();
         AudioSystem.instance.PlayWoodSmashHeavyOneShot(transform.position);
+        AudioSystem.instance.PlayBoos();
     }
 
     public void Interact()

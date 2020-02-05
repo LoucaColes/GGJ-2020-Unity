@@ -8,6 +8,8 @@ public class CameraSwitcher : MonoBehaviour
 
     private int currentIndex = 0;
 
+    public Transform CurrentCamera { get => cameras[currentIndex].transform; }
+
     // Start is called before the first frame update
     void Start()
     {

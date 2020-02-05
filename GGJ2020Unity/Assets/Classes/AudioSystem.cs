@@ -44,6 +44,8 @@ public class AudioSystem : Singleton<AudioSystem>
 
     [SerializeField] private StudioEventEmitter confettiEE;
 
+    [SerializeField] private StudioEventEmitter boosEE;
+
     [Header("Dynamic")]
     [SerializeField] private StudioEventEmitter audienceEE;
 
@@ -69,6 +71,11 @@ public class AudioSystem : Singleton<AudioSystem>
     void Update()
     {
         UpdateAudienceSetting(LevelFlowManager.instance.audienceEngagement);
+
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            PlayBoos();
+        }
     }
 
     #region Glass
@@ -220,5 +227,10 @@ public class AudioSystem : Singleton<AudioSystem>
     {
         musicEE.SetParameter("Parameter1", setting);
         musicEE.Play();
+    }
+
+    public void PlayBoos()
+    {
+        boosEE.Play();
     }
 }

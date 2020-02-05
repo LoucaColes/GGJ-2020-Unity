@@ -29,7 +29,6 @@ public class InteractableManager : Singleton<InteractableManager>
             timer += Time.deltaTime;
 
             int timerRounded = Mathf.FloorToInt(timer);
-            Debug.Log("Timer: " + timerRounded);
 
             if (timerRounded % disasterRate == 0)
             {

@@ -1,6 +1,74 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9104582869404906526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-8934578119118550628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-8502977687034323403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
 --- !u!114 &-8398554132487824633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-8380447777599789135
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,7 +100,7 @@ MonoBehaviour:
   Path: event:/Metal_Crash
   guid: 4e6c23fb66cf5640bf4896b3c3bfa096
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -40,7 +108,76 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 977
---- !u!114 &-7176844215193350625
+--- !u!114 &-8242384522197803433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-8195574468867442874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-7912726925454319454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 1
+--- !u!114 &-7811287000915862666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637164981905277226
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-7208677511267711614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,6 +194,58 @@ MonoBehaviour:
   Max: 100
   Default: 50
   Exists: 1
+--- !u!114 &-7176844215193350625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-7174724195504666587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-7144148807984473256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165048875699686
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7021988845951484128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,6 +262,359 @@ MonoBehaviour:
   Min: 0
   Max: 5
   Default: 0
+  Exists: 0
+--- !u!114 &-6991548727355384379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-6910706728550957436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-6780725764654816478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-6569267359088516169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165002670004361
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6474316032119060419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165060608831386
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6436067050858510234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-6327007057615647046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165068518502035
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6186191164938750371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-6170467419324264138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-6067748286663203333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-5882606998855149869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Audience2D
+  m_EditorClassIdentifier: 
+  Path: event:/Audience2D
+  guid: b13cff3d9a511e45a690552e7257b71a
+  Banks:
+  - {fileID: 8618596888412676370}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7912726925454319454}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5861334509716393389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-5844644194775762628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165047630819814
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5713180449487823838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-5499245362372143779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-5414935933654410423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-5148451839051788892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165071947121805
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5050719902952491471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &-5025888883104559368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-4612894042172117948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165044955111388
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &-4434101692336153221
 MonoBehaviour:
@@ -92,6 +634,63 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-4430512956594448005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-4271245051381860112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-3912862694951573106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Robot_Boos
+  m_EditorClassIdentifier: 
+  Path: event:/Robot_Boos
+  guid: abe6386727b7614bb91b26e283748a84
+  Banks:
+  - {fileID: 8618596888412676370}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
 --- !u!114 &-3877131957703401632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +706,7 @@ MonoBehaviour:
   Path: event:/Footsteps
   guid: 68d09ced8949e3468faf91be2a7f8a99
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -115,6 +714,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 200
+--- !u!114 &-3804674162265238700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
 --- !u!114 &-3524204301626922770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,7 +764,7 @@ MonoBehaviour:
   Path: event:/Curtains
   guid: fab9a4c480dbbe4cb43a84d61e89c686
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -171,7 +787,7 @@ MonoBehaviour:
   Path: event:/UI_Clicks
   guid: 2bd08682410cf843b6b4b1d046fd39e9
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -194,7 +810,7 @@ MonoBehaviour:
   Path: event:/Newspaper
   guid: e2768c10df8ee8468703c9eefdb07e69
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -202,6 +818,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1395
+--- !u!114 &-2816469845629289123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165059680900431
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-2596807602219738689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +851,7 @@ MonoBehaviour:
   Path: event:/Wood_LightSmash
   guid: c2775f42b2c9f54494b094f6af0d8a97
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -225,6 +859,41 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 824
+--- !u!114 &-1952635378441628995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 1
+--- !u!114 &-1786008548993401518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165044018691349
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-1626585559828463737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,12 +908,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../TSMGO_FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637162494283213828
+  lastModified: 637165073245044936
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1638
+    Value: 1718
   Exists: 1
+--- !u!114 &-1612510761016153137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
 --- !u!114 &-1586245826931828557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,7 +946,7 @@ MonoBehaviour:
   Path: event:/Fast_Repair
   guid: ceacb8ac4443f34db2148ae0883450a5
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -283,7 +969,7 @@ MonoBehaviour:
   Path: event:/Robot2_Beeps
   guid: 484c26c8b3d0c14cbf5b14926f5094f5
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -291,6 +977,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1452866151115921843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
 --- !u!114 &-1313808167553941788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +1005,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &-1114668372245188378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
   m_EditorClassIdentifier: 
   Name: Audiance_Reaction
   Min: 0
@@ -342,6 +1062,23 @@ MonoBehaviour:
   Max: 100
   Default: 50
   Exists: 0
+--- !u!114 &-646440636769891647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
 --- !u!114 &-595899307987670901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +1112,7 @@ MonoBehaviour:
   Path: event:/Glass_LightSmash
   guid: 0979108271e2e049adb06544a3c29b71
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -383,6 +1120,40 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 793
+--- !u!114 &-476288552543063228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 1
+--- !u!114 &-436062536306531672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
 --- !u!114 &-430272026836964711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,15 +1169,32 @@ MonoBehaviour:
   Path: event:/Audience
   guid: 9b6edb0d654f444687e45a1aa2702861
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -7176844215193350625}
+  - {fileID: 4344360080098452591}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-242445781415094048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
 --- !u!114 &-214134836681277403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,7 +1210,7 @@ MonoBehaviour:
   Path: event:/ConfettiCannon
   guid: 22d3eb2b375013429642e075e3dde160
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -444,7 +1232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -1626585559828463737}
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   EditorEvents:
   - {fileID: -564465037092898064}
   - {fileID: -8365304388456291867}
@@ -464,13 +1252,117 @@ MonoBehaviour:
   - {fileID: -3490368987932756153}
   - {fileID: -214134836681277403}
   - {fileID: -3225323632285957138}
+  - {fileID: -5882606998855149869}
+  - {fileID: -3912862694951573106}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   StringsBanks:
   - {fileID: -1626585559828463737}
-  stringsBankWriteTime: 637162494283213828
+  stringsBankWriteTime: 637165073245044936
   cacheVersion: 3
+--- !u!114 &85793770476141585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &222425072497062494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &734256359280627717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &979095988470162255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &2532181534404063515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &2635665954992088954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
 --- !u!114 &2782588316955373103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,7 +1396,7 @@ MonoBehaviour:
   Path: event:/Pully
   guid: 23a5f7501dbea84a8faf65b915330431
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -512,6 +1404,58 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &2941182620587751463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &3181649418767478604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &3489382629809964052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165048252687310
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &3667976019211388734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,7 +1471,7 @@ MonoBehaviour:
   Path: event:/Wood_HeavySmash
   guid: 2dd997ed08005749ae402e21c25a3ca3
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -535,6 +1479,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1002
+--- !u!114 &4091503191068360356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165072773290868
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4184139961451283853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,7 +1512,7 @@ MonoBehaviour:
   Path: event:/Glass_HeavySmash
   guid: bae965c544aab441bce1b00cd8bfa1df
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -558,6 +1520,40 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1165
+--- !u!114 &4288277262852700539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &4344360080098452591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 1
 --- !u!114 &4465680874376814858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +1569,7 @@ MonoBehaviour:
   Path: event:/Robot1_Beeps
   guid: 77b8622384a3d843b9f6c08718db9059
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -581,6 +1577,41 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4612026130401379484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &5595921142221728154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165063995028776
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5789976666456568118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,6 +1623,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &5998883080825148923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
   m_EditorClassIdentifier: 
   Name: Audiance_Reaction
   Min: 0
@@ -614,7 +1662,7 @@ MonoBehaviour:
   Min: 0
   Max: 5
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &6035973013399676186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,7 +1678,7 @@ MonoBehaviour:
   Path: event:/Repair
   guid: 99054dd9b051ac4da84079730bb1464b
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -638,6 +1686,58 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1119
+--- !u!114 &6554403910509887703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
+--- !u!114 &7018699406111679925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165060111597266
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &7172508083349888466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 0
 --- !u!114 &7263335274697099441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,7 +1755,25 @@ MonoBehaviour:
   lastModified: 637162494283163973
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &7324366198279353186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165059755471504
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &7461895104300704073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,7 +1789,7 @@ MonoBehaviour:
   Path: event:/Spotlight
   guid: 7e44436f35ec7443863342107012bc51
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -694,15 +1812,85 @@ MonoBehaviour:
   Path: event:/Music_Changer
   guid: 36348c6314fccc41967f8cecc3d5758a
   Banks:
-  - {fileID: 7263335274697099441}
+  - {fileID: 8618596888412676370}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6013487895129530309}
+  - {fileID: -1952635378441628995}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &8190172145623228220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience2D/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
+  Exists: 1
+--- !u!114 &8618596888412676370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165073245015016
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8799090250973406494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../TSMGO_FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637165057834803901
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8936954089514377663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music_Changer/Parameter1
+  m_EditorClassIdentifier: 
+  Name: Parameter1
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
 --- !u!114 &8961109873366873054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,4 +1908,21 @@ MonoBehaviour:
   lastModified: 637161706485560427
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &9006353767438602771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Audience/Audiance_Reaction
+  m_EditorClassIdentifier: 
+  Name: Audiance_Reaction
+  Min: 0
+  Max: 100
+  Default: 50
   Exists: 0
